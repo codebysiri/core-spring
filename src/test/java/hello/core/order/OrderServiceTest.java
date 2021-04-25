@@ -15,7 +15,7 @@ public class OrderServiceTest {
     @Test
     void createOrder() {
         long memberId = 1L;
-        Member member = new Member(memberId, "membarA", Grade.VIP);
+        Member member = new Member(memberId, "memberA", Grade.VIP);
         memberService.join(member);
 
         Order order = orderService.createOrder(memberId, "itemA", 10000);
